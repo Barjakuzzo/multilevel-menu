@@ -1,0 +1,62 @@
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  float: left;
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  background: black;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu > ul li {
+  position: relative;
+}
+
+.menu li a {
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-bottom: 0px solid;
+}
+
+/*  */
+.menu li ul {
+  position: absolute;
+  min-width: 200px;
+  display: none;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu li > ul li {
+  border: 2px;
+}
+
+.menu li > ul li a {
+  padding: 10px;
+  background: blue;
+  text-transform: 0;
+  color: white;
+}
+
+.menu li > ul li ul {
+  position: absolute;
+  right: -200px;
+  top: 40px;
+}
+
+.menu li a:hover {
+  background: orange;
+  color: white;
+}
